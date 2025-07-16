@@ -34,6 +34,10 @@ public class UserController {
         return userService.saveUser(userInDto);
     }
 
+    @PostMapping("/api/auth/register")
+    public UserInDto registerUser(@RequestBody UserInDto userInDto) {
+        return userService.saveUser(userInDto);
+    }
     @PutMapping("/users/{id}")
     public car_rental_application.demo.Entity.User editUser(@PathVariable Long id, @RequestBody UserInDto userInDto) {
         return userService.editUser(id, userInDto);

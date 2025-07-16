@@ -43,16 +43,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             "/v2/api-docs",
             "/webjars/**"
     };
-
-
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder);
     }
-
-
-
-
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         // Create custom authentication filter
@@ -95,8 +89,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 UsernamePasswordAuthenticationFilter.class
         );
     }
-
-
+    
     @Bean
     public BasicAuthenticationEntryPoint swaggerAuthenticationEntryPoint() {
         BasicAuthenticationEntryPoint entryPoint = new BasicAuthenticationEntryPoint();
