@@ -1,12 +1,12 @@
 package car_rental_application.demo.service;
 
 
-import car_rental_application.demo.Entity.Car;
-import car_rental_application.demo.Entity.PlacedOrder;
-import car_rental_application.demo.Entity.User;
-import car_rental_application.demo.Repository.AccessKeyRepository;
-import car_rental_application.demo.Repository.CarRepository;
-import car_rental_application.demo.Repository.OrderRepository;
+import car_rental_application.demo.entity.Car;
+import car_rental_application.demo.entity.PlacedOrder;
+import car_rental_application.demo.entity.User;
+import car_rental_application.demo.repository.AccessKeyRepository;
+import car_rental_application.demo.repository.CarRepository;
+import car_rental_application.demo.repository.OrderRepository;
 import car_rental_application.demo.exception.InvalidPackageException;
 import car_rental_application.demo.exception.NoAccessKeyException;
 import car_rental_application.demo.exception.UnavailableCarException;

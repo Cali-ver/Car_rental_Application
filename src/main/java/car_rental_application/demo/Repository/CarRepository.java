@@ -1,7 +1,7 @@
-package car_rental_application.demo.Repository;
+package car_rental_application.demo.repository;
 
 
-import car_rental_application.demo.Entity.Car;
+import car_rental_application.demo.entity.Car;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

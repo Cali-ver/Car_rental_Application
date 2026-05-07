@@ -1,4 +1,4 @@
-package car_rental_application.demo.JWT;
+package car_rental_application.demo.jwt;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

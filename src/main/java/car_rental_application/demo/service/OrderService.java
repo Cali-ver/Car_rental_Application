@@ -1,13 +1,13 @@
 package car_rental_application.demo.service;
 
 
-import car_rental_application.demo.Entity.AccessKey;
-import car_rental_application.demo.Entity.CarPackage;
-import car_rental_application.demo.Entity.PlacedOrder;
-import car_rental_application.demo.Entity.User;
-import car_rental_application.demo.Repository.AccessKeyRepository;
-import car_rental_application.demo.Repository.CarPackageRepository;
-import car_rental_application.demo.Repository.OrderRepository;
+import car_rental_application.demo.entity.AccessKey;
+import car_rental_application.demo.entity.CarPackage;
+import car_rental_application.demo.entity.PlacedOrder;
+import car_rental_application.demo.entity.User;
+import car_rental_application.demo.repository.AccessKeyRepository;
+import car_rental_application.demo.repository.CarPackageRepository;
+import car_rental_application.demo.repository.OrderRepository;
 import car_rental_application.demo.dto.AccessKeyDto;
 import car_rental_application.demo.exception.ExistingOrderException;
 import car_rental_application.demo.exception.InsufficientFundsException;

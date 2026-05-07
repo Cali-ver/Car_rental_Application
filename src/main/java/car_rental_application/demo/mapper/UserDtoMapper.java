@@ -1,7 +1,7 @@
 package car_rental_application.demo.mapper;
 
-import car_rental_application.demo.Entity.Role;
-import car_rental_application.demo.Entity.User;
+import car_rental_application.demo.entity.Role;
+import car_rental_application.demo.entity.User;
 import car_rental_application.demo.dto.UserDto;
 import org.springframework.stereotype.Service;
 

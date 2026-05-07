@@ -1,10 +1,10 @@
-package car_rental_application.demo.Controller;
+package car_rental_application.demo.controller;
 
 
 
-import car_rental_application.demo.Entity.Car;
-import car_rental_application.demo.Entity.CarPackage;
-import car_rental_application.demo.Entity.CarParameter;
+import car_rental_application.demo.entity.Car;
+import car_rental_application.demo.entity.CarPackage;
+import car_rental_application.demo.entity.CarParameter;
 import car_rental_application.demo.dto.CarDto;
 import car_rental_application.demo.dto.CarPackageDto;
 import car_rental_application.demo.service.CarService;
@@ -16,12 +16,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 @RestController
+@RequestMapping("/api")
 @RequiredArgsConstructor
 public class CarController {
 

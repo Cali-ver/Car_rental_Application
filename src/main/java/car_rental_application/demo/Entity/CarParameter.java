@@ -1,4 +1,4 @@
-package car_rental_application.demo.Entity;
+package car_rental_application.demo.entity;
 
 import car_rental_application.demo.constant.FuelType;
 import car_rental_application.demo.constant.GearBoxType;

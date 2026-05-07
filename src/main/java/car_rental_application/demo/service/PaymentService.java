@@ -1,9 +1,9 @@
 package car_rental_application.demo.service;
 
-import car_rental_application.demo.Entity.CreditCard;
-import car_rental_application.demo.Entity.User;
-import car_rental_application.demo.Repository.CreditCardRepository;
-import car_rental_application.demo.Repository.UserRepository;
+import car_rental_application.demo.entity.CreditCard;
+import car_rental_application.demo.entity.User;
+import car_rental_application.demo.repository.CreditCardRepository;
+import car_rental_application.demo.repository.UserRepository;
 import car_rental_application.demo.dto.CreditCardDto;
 import car_rental_application.demo.exception.NoCreditCardException;
 import car_rental_application.demo.security.LoggedInUser;

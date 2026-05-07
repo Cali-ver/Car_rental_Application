@@ -2,9 +2,9 @@ package car_rental_application.demo.service;
 
 
 
-import car_rental_application.demo.Entity.User;
-import car_rental_application.demo.JWT.PasswordValidator;
-import car_rental_application.demo.Repository.UserRepository;
+import car_rental_application.demo.entity.User;
+import car_rental_application.demo.jwt.PasswordValidator;
+import car_rental_application.demo.repository.UserRepository;
 import car_rental_application.demo.dto.UserInDto;
 import car_rental_application.demo.exception.ExistingEntityException;
 import car_rental_application.demo.exception.WeakPasswordException;
@@ -42,7 +42,8 @@ public class RegistrationService {
             User user = (User) UserInDtoMapper.mapToUser(userInDto);
             user.setPassword(passwordEncoder.encode(user.getPassword()));
             userRepository.save(user);
-            userService.addRoleToUser(user.getUsername(), "ROLE_USER");
+            String roleName = "ROLE_" + (userInDto.getRole() != null ? userInDto.getRole().toUpperCase() : "USER");
+            userService.addRoleToUser(user.getUsername(), roleName);
 
         }
     }

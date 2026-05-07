@@ -1,19 +1,21 @@
-package car_rental_application.demo.Controller;
+package car_rental_application.demo.controller;
 
 
 
-import car_rental_application.demo.Entity.PlacedOrder;
+import car_rental_application.demo.entity.PlacedOrder;
 import car_rental_application.demo.dto.AccessKeyDto;
 import car_rental_application.demo.service.OrderService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 @RestController
+@RequestMapping("/api")
 @RequiredArgsConstructor
 public class OrderController {
 

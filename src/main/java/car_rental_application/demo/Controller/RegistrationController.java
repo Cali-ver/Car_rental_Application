@@ -1,4 +1,4 @@
-package car_rental_application.demo.Controller;
+package car_rental_application.demo.controller;
 
 
 

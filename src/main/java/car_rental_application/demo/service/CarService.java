@@ -1,14 +1,14 @@
 package car_rental_application.demo.service;
 
 
-import car_rental_application.demo.Entity.Car;
-import car_rental_application.demo.Entity.CarPackage;
-import car_rental_application.demo.Entity.CarParameter;
-import car_rental_application.demo.JWT.PageValidator;
-import car_rental_application.demo.JWT.SortValidator;
-import car_rental_application.demo.Repository.CarPackageRepository;
-import car_rental_application.demo.Repository.CarParametersRepository;
-import car_rental_application.demo.Repository.CarRepository;
+import car_rental_application.demo.entity.Car;
+import car_rental_application.demo.entity.CarPackage;
+import car_rental_application.demo.entity.CarParameter;
+import car_rental_application.demo.jwt.PageValidator;
+import car_rental_application.demo.jwt.SortValidator;
+import car_rental_application.demo.repository.CarPackageRepository;
+import car_rental_application.demo.repository.CarParametersRepository;
+import car_rental_application.demo.repository.CarRepository;
 import car_rental_application.demo.dto.CarDto;
 import car_rental_application.demo.dto.CarPackageDto;
 import car_rental_application.demo.exception.ExistingEntityException;

@@ -1,8 +1,8 @@
 package car_rental_application.demo.security;
 
 
-import car_rental_application.demo.Entity.User;
-import car_rental_application.demo.Repository.UserRepository;
+import car_rental_application.demo.entity.User;
+import car_rental_application.demo.repository.UserRepository;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

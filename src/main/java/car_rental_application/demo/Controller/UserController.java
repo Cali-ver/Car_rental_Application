@@ -1,8 +1,8 @@
-package car_rental_application.demo.Controller;
+package car_rental_application.demo.controller;
 
 
-import car_rental_application.demo.Entity.Role;
-import car_rental_application.demo.Entity.User;
+import car_rental_application.demo.entity.Role;
+import car_rental_application.demo.entity.User;
 import car_rental_application.demo.dto.CreditCardDto;
 import car_rental_application.demo.dto.UserDto;
 import car_rental_application.demo.dto.UserInDto;
@@ -14,11 +14,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
+@RequestMapping("/api")
 @RequiredArgsConstructor
 public class UserController {
 
@@ -34,12 +36,8 @@ public class UserController {
         return userService.saveUser(userInDto);
     }
 
-    @PostMapping("/api/auth/register")
-    public UserInDto registerUser(@RequestBody UserInDto userInDto) {
-        return userService.saveUser(userInDto);
-    }
     @PutMapping("/users/{id}")
-    public car_rental_application.demo.Entity.User editUser(@PathVariable Long id, @RequestBody UserInDto userInDto) {
+    public car_rental_application.demo.entity.User editUser(@PathVariable Long id, @RequestBody UserInDto userInDto) {
         return userService.editUser(id, userInDto);
     }
 
@@ -54,7 +52,7 @@ public class UserController {
     }
 
     @PutMapping("/users/{username}/roles")
-    public car_rental_application.demo.Entity.User  addRoleToUser(@PathVariable String username, @RequestParam String roleName) {
+    public car_rental_application.demo.entity.User  addRoleToUser(@PathVariable String username, @RequestParam String roleName) {
         return userService.addRoleToUser(username, roleName);
     }
 

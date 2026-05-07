@@ -15,5 +15,6 @@ public class UserInDto {
     private String password;
     private String email;
     private String phone;
+    private String role;
 
 }

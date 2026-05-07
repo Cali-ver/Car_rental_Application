@@ -1,4 +1,4 @@
-package car_rental_application.demo.JWT;
+package car_rental_application.demo.jwt;
 
 import org.springframework.data.domain.Sort;
 

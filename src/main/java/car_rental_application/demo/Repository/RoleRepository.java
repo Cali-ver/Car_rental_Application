@@ -1,6 +1,6 @@
-package car_rental_application.demo.Repository;
+package car_rental_application.demo.repository;
 
-import car_rental_application.demo.Entity.Role;
+import car_rental_application.demo.entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
